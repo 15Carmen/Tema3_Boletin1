@@ -21,15 +21,11 @@ public class Ejercicio4 {
         num = sc.nextInt();
 
         while (num != 0){                       //Mientras el numero introducido por el usuario sea distinto de 0
-            if ( num % 2 == 0 ){                //Si el modulo del módulo in
-                System.out.println( "Es par" );
-            }
-            else {
-                System.out.println( "Es impar" );
-            }
-
+            String mensaje = (num%2==0)  ? "Es par" : "Es impar";
+            System.out.println(mensaje);
             System.out.println("Introduzca otro numero: ");
             num= sc.nextInt();
         }
+        System.out.println("Hasta luego Mari Carmen");
     }
 }
