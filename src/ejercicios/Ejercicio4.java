@@ -12,6 +12,7 @@ public class Ejercicio4 {
     public static void main(String[] args) {
         //Decalramos las variables
         int num; //Variable donde vamos a guardar los numeros introducidos por el usuario
+        String mensaje;
 
         //Declaramos el scanner para poder leer por consola
         Scanner sc = new Scanner(System.in);
@@ -20,8 +21,8 @@ public class Ejercicio4 {
         System.out.println("Introduzca un numero entero positivo (Cuando desee dejar de introducir numeros, introduzca un 0): ");
         num = sc.nextInt();
 
-        while (num != 0){                       //Mientras el numero introducido por el usuario sea distinto de 0
-            String mensaje = (num%2==0)  ? "Es par" : "Es impar";
+        while (num != 0){                                           //Mientras el numero introducido por el usuario sea distinto de 0
+            mensaje = (num%2==0)  ? "Es par" : "Es impar";
             System.out.println(mensaje);
             System.out.println("Introduzca otro numero: ");
             num= sc.nextInt();
