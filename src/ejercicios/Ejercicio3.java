@@ -14,7 +14,7 @@ public class Ejercicio3 {
         int num;            //Variable donde guardamos los números introducidos por el usuario
         int suma = 0;       //Variable donde guardamos la suma de los números que se van introduciendo
         int contador = 0;   //Variable donde guardamos el número de veces que el usuario introduce un número positivo
-        int media = 0;      //Variable donde vamos a guardar la media de la suma de los números
+        double media;      //Variable donde vamos a guardar la media de la suma de los números
         
         //Declaramos el scanner para poder leer por consola
         Scanner sc = new Scanner(System.in);
@@ -28,11 +28,13 @@ public class Ejercicio3 {
             contador++;                                         //e incrementamos el contador en 1
             System.out.println("Introduzca otro número: ");     //Le pedimos al usuario que introduzca otro número
             num= sc.nextInt();                                  //y lo volvemos a guardar en la variable num
-            media=suma/contador;                                //finalmente calculamos la media de los números introducidos que es
-                                                                // el total de la suma los números entre la cantidad de veces que se ha introducido un número
         }
+        media=(double)suma/(double)contador;                    //finalmente calculamos la media de los números introducidos que es
+                                                                // el total de la suma los números entre la cantidad de veces que se ha introducido un número
 
-        //Cuando salimos del bucle imprimimos por consola la media de los números introducidos
+        //Imprimimos por consola la media de los números introducidos
+        System.out.println(suma);
+        System.out.println(contador);
         System.out.println("La media de los numeros introducidos es "+media);
         
         //Cerramos el scanner

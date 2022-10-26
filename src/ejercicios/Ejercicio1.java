@@ -23,7 +23,7 @@ public class Ejercicio1 {
         System.out.println("Introduzca un numero (cuando desee de introducir numeros, introduzca uno negativo): ");
         num = sc.nextInt();
 
-        while (num >= 0) {      //Mientras el numero introducido sea menor o igual que 0
+        while (num >= 0) {      //Mientras el numero introducido sea mayor o igual que 0
             suma+=num;          //A la variable suma (que al inicio del programa es 0) le sumamos el numero introducido
                                 //Le pedimos al usuario que introduzca otro número para sumarlo y lo guardamos en la variable num
             System.out.println("Introduzca un numero que sumarle: ");

@@ -22,7 +22,7 @@ public class Ejercicio2 {
         num = sc.nextInt();
 
 
-        while (num >= 0) {         //Mientras el numero introducido sea menor o igual que 0
+        while (num >= 0) {         //Mientras el numero introducido sea mayor o igual que 0
             contador++;            //incrementamos el contador en 1
                                    //y le pedimos al usuario que introduzca otro número
             System.out.println("Introduzca otro numero : ");
