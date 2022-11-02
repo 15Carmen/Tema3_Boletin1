@@ -24,7 +24,6 @@ public class Ejercicio6 {
         System.out.println("Introduzca la edad de los alumnos (cuando quiera dejar de hacerlo introduzca un número negativo):");
         edad = sc.nextInt();
 
-
         while (edad > 0) {                                      //Mientras la edad introducida sea mayor que 0
             contadorAlumnos++;                                  //Incrementamos en 1 el contador de alumnos
             suma += edad;                                       //Sumamos las edades introducidas
